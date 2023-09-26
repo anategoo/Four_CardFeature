@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: var(--color-Very-Light-Gray);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --color-Red: hsl(0, 78%, 62%);
+    --color-Cyan: hsl(180, 62%, 55%);
+    --color-Orange: hsl(34, 97%, 64%);
+    --color-Blue: hsl(212, 86%, 64%);
+    --color-Very-Dark-Blue: hsl(234, 12%, 34%);
+    --color-Grayish-Blue: hsl(229, 6%, 66%);
+    --color-Very-Light-Gray: hsl(0, 0%, 98%);
+}
+.all .text h1,
+h3{
+    color: var(--color-Very-Dark-Blue);
+    font-weight: 800;
+    margin: 0;
+    padding-left: 20px;
+}
+.all .text :first-child{
+    font-weight: 400;
+}
+p{
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--color-Very-Dark-Blue);
+}
+.all{
+    display: flex;
+    flex-wrap: wrap;
+}
+.all .text{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+
+}
+.all .features{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    position: relative;
+    grid-gap: 70px;
+}
+
+.all .features .feat{
+    width:365px;
+    background-color: white;
+    height: 200px;
+
+}
+.all .features p{
+    padding-left: 20px;
+}
+.all .features img{
+    padding-left: 75%;
+    padding-top: 2%;
+}
+.feat{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.features div:nth-child(3){
+    grid-row: 2;
+    grid-column: 2;
+
+}
+.features div:nth-child(1){
+    transform:translate(30px, 165px);
+    border-top: 5px var(--color-Cyan) solid;
+
+}
+.features div:nth-child(2){
+    border-top: 5px var(--color-Red) solid;
+}
+.features div:nth-child(3){
+    border-top: 5px var(--color-Orange) solid;
+}
+.features div:nth-child(4){
+    transform:translate(-30px, 165px);
+    border-top: 5px var(--color-Blue) solid;
+
+
+}
+h3{
+    padding-top: 20px;
+}
+
+@media (max-width: 1200px) {
+    .all .features{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .features div:nth-child(1){
+        transform:translate(0, 0);
+    }
+    .features div:nth-child(4){
+        transform:translate(0, 0);
+    }
+}
+@media (max-width:576px) {
+    h1{
+        font-size: 26px;
+    }
+
+}
+.one{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.two{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
